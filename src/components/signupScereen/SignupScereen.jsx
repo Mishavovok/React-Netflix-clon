@@ -23,7 +23,7 @@ function SignupScereen() {
   const singIn = async (event) => {
     try {
       let loginResponse = await signInUser(emailRef.current.value, passwordRef.current.value);
-      console.log(loginResponse.user);
+      console.log(loginResponse);
     } catch (error) {
       alert(error.message);
     }
